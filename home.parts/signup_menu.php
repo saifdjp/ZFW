@@ -1,4 +1,6 @@
+
 </br></br></br>
+
 
 <div class="jumbotron jumbotron-fluid" style="background-image: url(home.parts/image/test.jpg);">
   
@@ -130,16 +132,16 @@ hr {
 
 
 
-
+<!-- CAFE FORM -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
+  <form class="modal-content" action="signup.action/cafe.php" method='post'>
     <div class="container">
       <h1>CAFE Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
-      <label for="uname"><b>User Name</b></label>
-      <input type="text" placeholder="Enter username" name="uname" required>
+      <label for="username"><b>User Name</b></label>
+      <input type="text" placeholder="Enter username" name="username" required>
 
       <label for="name"><b>Name</b></label>
       <input type="text" placeholder="Enter Name" name="name" required>
@@ -223,7 +225,7 @@ window.onclick = function(event) {
 
 
 
-
+<!-- NGO Signup Forms-->
 <div id="id03" class="modal">
   <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" action="/action_page.php">
