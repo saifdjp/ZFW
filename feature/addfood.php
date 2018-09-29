@@ -6,7 +6,7 @@
 	<div class="col-1"><button class="btn"><a href="../index.php">Home</a></button></div>
 
 	<h2>FILLUP THE ADD FOOD FORM</h2>
-	<form action="/addfoodaction.php" method="post">
+	<form action="addfoodaction.php" method="post" enctype="multipart/form-data">
 	 
 	 Food ID: <input type="text" class="form-control" name='f_id'>
 	 Food Name : <input type="text" class="form-control" name='foodname'>
@@ -18,7 +18,7 @@
 				  <option value="yes">yes</option>
 				  <option value="no">no</option>
 				</select>
-
+	Select image:<input type="file" name="image"/>
 	  <button type="submit" class="btn btn-primary">Submit</button>
 	</form>
 

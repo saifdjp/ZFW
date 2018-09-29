@@ -67,6 +67,13 @@ include 'logoNtitle.php' ;
 	}
 
 
+	else if($_SESSION['usertype']=='user')
+	{
+		echo "Just an user";
+
+	}
+
+
   	//echo $_SESSION['user'];
   	//echo isset($_SESSION['user']);
   }

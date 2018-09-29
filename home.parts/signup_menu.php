@@ -189,7 +189,7 @@ window.onclick = function(event) {
 <!-- USER Signup Forms-->
 <div id="id02" class="modal">
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
+  <form class="modal-content" action="signup.action/user.php" method="post">
     <div class="container">
       <h1>USER Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
