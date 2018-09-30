@@ -69,8 +69,9 @@ include 'logoNtitle.php' ;
 
 	else if($_SESSION['usertype']=='user')
 	{
-		echo "Just an user";
-
+		//echo "Just an user";
+		include 'feature/showitems.php';
+			
 	}
 
 

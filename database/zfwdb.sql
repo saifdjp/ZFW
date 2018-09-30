@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 30, 2018 at 01:17 AM
+-- Generation Time: Sep 30, 2018 at 02:26 AM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -69,8 +69,29 @@ CREATE TABLE `food` (
 --
 
 INSERT INTO `food` (`f_id`, `c_username`, `name`, `itemleft`, `price`, `discount`, `timeleft`, `donateable`, `picture`) VALUES
-('1', '12', '1', 1, 1, 1, 1, 'yes', 418663448),
-('2', '12', '2', 2, 2, 2, 2, 'yes', 1465084200);
+('1', '12', '1', 10, 1, 1, 1, 'yes', 418663448),
+('121', '12', '21', 12, 1, 1, 1, 'yes', 32425982);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `token`
+--
+
+CREATE TABLE `token` (
+  `token_id` varchar(50) NOT NULL,
+  `f_id` varchar(50) NOT NULL,
+  `c_id` varchar(50) NOT NULL,
+  `u_id` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `token`
+--
+
+INSERT INTO `token` (`token_id`, `f_id`, `c_id`, `u_id`) VALUES
+('1048677803', '1', '12', 'u1'),
+('1478997307', '1', '12', 'u1');
 
 -- --------------------------------------------------------
 
@@ -106,6 +127,15 @@ ALTER TABLE `cafe`
 ALTER TABLE `food`
   ADD PRIMARY KEY (`f_id`),
   ADD KEY `c_username` (`c_username`);
+
+--
+-- Indexes for table `token`
+--
+ALTER TABLE `token`
+  ADD PRIMARY KEY (`token_id`),
+  ADD KEY `f_id` (`f_id`),
+  ADD KEY `c_id` (`c_id`),
+  ADD KEY `u_id` (`u_id`);
 
 --
 -- Indexes for table `user`
